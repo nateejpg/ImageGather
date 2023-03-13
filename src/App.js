@@ -7,11 +7,11 @@ function App() {
   const [term, setTerm] = useState('')
 
   useEffect(() => {
-    fetch(`https://pixabay.com/api/?key=${process.env.REACT_APP_PIXABAY_API_KEY}&q=${term}&image_type=photo&pretty=true`)
+    fetch(`https://pixabay.com/api/?key=${REACT_APP_PIXABAY_API_KEY}&q=${term}&image_type=photo&pretty=true`)
     .then(res => res.json())
     .then(data => console.log(data))
     .catch(err => console.log(err))
-  })
+  });
 
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg">
