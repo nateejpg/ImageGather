@@ -7,6 +7,7 @@ function App() {
   const [term, setTerm] = useState('')
 
   // JUST ADDING A COMMENT HERE TO CHECK IF IT WORKED
+  // I guess we did it
 
   useEffect(() => {
     fetch(`https://pixabay.com/api/?key=${process.env.REACT_APP_PIXABAY_API_KEY}&q=${term}&image_type=photo&pretty=true`)
